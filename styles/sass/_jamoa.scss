@@ -1,0 +1,48 @@
+.jamoa{
+    width: 100%;
+
+    .jamoa-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .jamoa-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        animation: jamoa-scale 3s linear infinite;
+
+        @keyframes jamoa-scale{
+            0%{
+                transform: scale(1)
+            }
+            50%{
+                transform: scale(1.2);
+              }
+              100%{
+                transform: scale(1);
+              }
+        }
+
+        .jamoa-img-child{
+            @include cardlar();
+
+            width: 354px;
+            height: 476px;
+
+            .muhammad{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-top: 10px;
+            }
+            p{
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: #514D48;
+            }
+        }
+    }
+}

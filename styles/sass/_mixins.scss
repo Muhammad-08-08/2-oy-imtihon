@@ -1,0 +1,67 @@
+@mixin kirish-btn(
+  $btn-bg-color: transparent,
+  $border-btn: 1px solid #0076f5,
+  $padding-btn: 0,
+  $btn-color: #0076f5
+) {
+  height: 50px;
+  background-color: $btn-bg-color;
+  color: $btn-color;
+  border: $border-btn;
+  padding: $padding-btn;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+
+  &:hover {
+    background-color: $btn-color;
+    color: white;
+    transition: all 0.5s;
+  }
+  &:active {
+    background-color: blue;
+    transition: all 0.5s;
+  }
+}
+
+@mixin cardlar($bg-card-color: #F5FAFF, $color: #514d48) {
+  width: 482px;
+  height: 528px;
+  border-radius: 10px;
+  background-color: $bg-card-color;
+  color: $color;
+  text-align: center;
+  padding-top: 40px;
+
+  h4 {
+    //styleName: S1 medium;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: center;
+    color: #1b1a18;
+  }
+}
+
+@mixin cardlar1($bg-card-color: #F5FAFF, $color: #514d48) {
+  width: 354px;
+  height: 460px;
+  border-radius: 10px;
+  background-color: $bg-card-color;
+  color: $color;
+  text-align: left;
+  padding-top: 40px;
+
+  h4 {
+    //styleName: S1 medium;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: left;
+    color: #1b1a18;
+  }
+}

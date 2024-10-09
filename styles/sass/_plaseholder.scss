@@ -1,0 +1,26 @@
+%p-lar {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #514d48;
+}
+%a-lar {
+  //styleName: Body 1 reg;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #1B1A18;
+  text-decoration: none;
+
+  &:hover{
+    color: orange;
+    transition: all 0.5s;
+  }
+  &:active{
+    color: gold;
+    transition: all 0.5s;
+  }
+}

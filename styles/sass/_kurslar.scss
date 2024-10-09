@@ -1,0 +1,70 @@
+.kurslar{
+    width: 100%;
+    position: relative;
+
+    .kurs-text{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .kurs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .kurslar-card{
+            @include cardlar();
+            animation: kurs-scale 3s linear infinite;
+    
+            p{
+                @extend %p-lar;
+                margin: 0 auto;
+                margin-bottom: 10px
+            }
+            button{
+                @include kirish-btn(rgb(77, 77, 243));
+                width: 195px;
+                color: white;
+                margin-top: 20px;
+    
+                &:hover{
+                    background-color: transparent;
+                    color: #0076f5;
+                }
+                &:active{
+                    background-color: blue;
+                    color: white;
+    
+                }
+            }
+        }
+        .kurslar-card1{
+            @include cardlar();
+            animation: kurs-scale 3s linear infinite;
+
+            p{
+                @extend %p-lar;
+                margin: 0 auto;
+                margin-bottom: 10px
+            }
+            button{
+                @include kirish-btn();
+                width: 195px;
+            }
+        }
+    }
+}
+
+@keyframes kurs-scale{
+    0%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.2);
+      }
+      100%{
+        transform: scale(1);
+      }
+}

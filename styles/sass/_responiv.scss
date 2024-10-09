@@ -1,0 +1,299 @@
+
+
+
+@media(max-width: 1555px){
+    .container{
+        width: 100%;
+        padding: 20px;
+
+        nav{
+            a{
+                display: none;
+            }
+            button{
+                display: none;
+            }
+    
+        }
+        .menyu1{
+            display: block;
+        }
+        .hero{
+    
+            .hero-text{
+                
+                .hero-span{
+                    font-size: 40px;
+                }
+                
+                h1{
+                    font-size: 40px;   
+                }
+            }
+        }
+        .sertifikat-flex{
+            justify-content: center;
+        }
+    }
+    .darsliklar {
+        width: 100%;
+      
+        .dars-text {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .dars-card {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+      
+          p {
+            //styleName: Body 1 reg;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+          }
+      
+      }
+    }
+    .jamoa{
+        width: 100%;
+    
+        span{
+            display: none;
+        }
+        .jamoa-text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .jamoa-img{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    }
+    .statistika {
+        width: 100%;
+
+        .stat{
+            text-align: center;
+        }
+      
+        .statistik-icon {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      
+          .icon-statistik {
+            width: 354px;
+            height: 246px;
+            border-radius: 10px;
+            background-color: text-color();
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+      }
+      .kurslar{
+        width: 100%;
+        position: relative;
+    
+        .kurs-h2{
+            text-align: center;
+        }
+        span{
+            display: none;
+        }
+        .kurs-text{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .kurs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+        }
+    }
+
+    .biz-haqimizda{
+        width: 100%;
+    
+        .biz-haqimizda2{
+            width: 100%;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+    
+            .biz-haqimizda-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+            }
+        }
+    }    
+    
+    .sertifikat{
+        width: 100%;
+
+        .sertifikat-h3{
+           text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+    
+        .sertifikat-flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+    
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .hero{
+        width: 100%;
+
+
+        .hero-flex{
+            max-width: 1700px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .hero-text{
+                width: 750px;
+
+                h1{
+                    font-size: 25px;
+                    width: 250px;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+
+                .hero-span{
+                    color: #0076f5;
+                    font-size: 25px;
+                    margin: 0 auto;
+                }
+    
+                .hero-btn{
+                    width: 64%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    justify-content: center;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+            }
+    
+            .hero-img{
+                width: 750px;
+                display: flex;
+                justify-content: center;
+              }
+        }
+    }
+
+    .biz-haqimizda{
+        width: 100%;
+
+
+    
+        .biz-haqimizda2{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+    
+            .biz-haqimizda-text{
+                h3{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 16px;
+                    width: 250px;
+                }
+            }
+            .biz-haqimizda-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .sertifikat{
+        width: 100%;
+
+        .sertifikat-h3{
+           text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+
+        p{
+            // text-align: center;
+            width: 280px;
+            margin: 0 auto;
+        }
+    
+        .sertifikat-flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+    
+        }
+    }
+    .kurslar{
+        width: 100%;
+        position: relative;
+    
+        .kurs-h2{
+            text-align: center;
+        }
+        span{
+            display: none;
+        }
+        p{
+            width: 260px;
+        }
+        .kurs-text{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .kurs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+        }
+    }
+}

@@ -1,0 +1,47 @@
+footer {
+  width: 100%;
+  border-top: 1px solid gray;
+
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5 0px;
+
+    input {
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid #0076f5;
+      color: #0076f5;
+      padding-left: 20px;
+    }
+    input::placeholder {
+      color: #0076f5;
+      opacity: 1;
+    }
+    button {
+      @include kirish-btn(#0076f5);
+      width: 100%;
+      height: 50px;
+      color: white;
+      margin-bottom: 60px;
+
+      &:hover {
+        background-color: transparent;
+        color: #0076f5;
+        transition: all 0.5s;
+      }
+      &:active {
+        background-color: blue;
+        color: white;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+}

@@ -1,0 +1,31 @@
+.biz-haqimizda{
+    width: 100%;
+
+    .biz-haqimizda2{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .biz-haqimizda-img{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .biz-haqimizda-img-left{
+                width: 100%;
+                img{
+                    width: 90%;
+                }
+            }
+            .biz-haqimizda-img-right{
+                width: 100%;
+                transform: translateY(-30px);
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

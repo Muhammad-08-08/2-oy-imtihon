@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: lightgray;
+}
+
+@import "function";
+@import "mixins";
+@import "ozgaruvchilar";
+@import "plaseholder";
+@import "veriable";
+@import "loop";
+@import "header";
+@import "statistika";
+@import "biz-haqimizda";
+@import "kurslar";
+@import "darsliklar";
+@import "jamoa";
+@import "sertifikat";
+@import "footer";
+@import "responiv";
+ 
+
+.container{
+  max-width: 1920px;
+  background-color: $container-bg-color;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .sun{
+    width: 50px;
+    height: 50px;
+  }
+
+}

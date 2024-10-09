@@ -1,0 +1,40 @@
+@import url("./_function.scss");
+.statistika {
+  width: 100%;
+
+  .stat{
+    color: black;
+  }
+
+  .statistik-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .icon-statistik {
+      width: 354px;
+      height: 246px;
+      border-radius: 10px;
+      background-color: text-color();
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      img{
+        animation: icon-scale 3s linear infinite;
+      }
+    }
+  }
+  @keyframes icon-scale{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.5);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+}
+

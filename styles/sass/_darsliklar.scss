@@ -1,0 +1,50 @@
+.darsliklar {
+  width: 100%;
+
+  .dars-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .dars-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      //styleName: Body 1 reg;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: left;
+    }
+
+    .darslik-card {
+      @include cardlar1();
+      button {
+        @include kirish-btn(rgb(77, 77, 243));
+        width: 196px;
+        color: white;
+
+        &:hover {
+          background-color: transparent;
+          color: #0076f5;
+        }
+        &:active {
+          background-color: blue;
+          color: white;
+        }
+      }
+    }
+    .darslik-card1 {
+        @include cardlar1();
+        button {
+          @include kirish-btn();
+          width: 196px;
+        }
+      }
+  }
+}

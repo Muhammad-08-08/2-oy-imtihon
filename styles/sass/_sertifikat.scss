@@ -1,0 +1,17 @@
+.sertifikat{
+    width: 100%;
+
+    .sertifikat-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .sertifikat-img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

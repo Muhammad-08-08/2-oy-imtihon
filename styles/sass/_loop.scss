@@ -1,0 +1,64 @@
+@import "ozgaruvchilar";
+
+@for $i from 1 to 40 {
+    .ml-#{$i} {
+        margin-left: $i * 10px;
+    }
+    .mr-#{$i} {
+        margin-right: $i * 10px;
+    }
+    .mt-#{$i} {
+        margin-top: $i * 10px;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i * 10px;
+    }
+    .mlr-#{$i} {
+        margin-left: $i * 10px;
+        margin-right: $i * 10px;
+    }
+    .mtb-#{$i} {
+        margin-top: $i * 10px;
+        margin-bottom: $i * 10px;
+    }
+    .pl-#{$i} {
+        padding-left: $i * 10px;
+    }
+    .pr-#{$i} {
+        padding-right: $i * 10px;
+    }
+    .pt-#{$i} {
+        padding-top: $i * 10px;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i * 10px;
+    }
+    .plr-#{$i} {
+        padding-left: $i * 10px;
+        padding-right: $i * 10px;
+    }
+    .ptb-#{$i} {
+        padding-top: $i * 10px;
+        padding-bottom: $i * 10px;
+    }
+    .fsize-#{$i} {
+        font-size: $i * 16px;
+    }
+    .keng-#{$i} {
+        width: $i * 25px;
+    }
+}
+@each $nomi, $rang in $ranglar-hammasi {
+    .button-#{$nomi} {
+      background-color: $rang;
+      padding: 20px 60px;
+      border: none;
+      color: white;
+      border-radius: 10px;
+    }
+  
+    .text-#{$nomi} {
+      color: $rang;
+      font-size: 16px;
+    }
+  }
